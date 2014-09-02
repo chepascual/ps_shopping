@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PS Shopping List</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="app.js"></script>
+</head>
+
+<body>
+
+	<div id="top-bar"><br>
+			<input type="text" name="item-data" id="item_text" size="40" placeholder="type item here" />
+			<button type="button" class="add-item">+✎</button>
+			<button type="button" class="add-fave">
+				+♥</button>
+			<button type="button" class="clear-text">
+				-</button><br><br>
+	</div>
+
+	<div id="lists">
+		<fieldset>
+			<legend>✎ list</legend>
+				<ul>
+				<li>brown sugar</li>
+				<li>coffee <span>✓ ✘ </span></li>
+				<li><span><strike>pancake mix</strike></span><li>
+				</ul>
+		</fieldset>
+	</div>
+
+	<div id="favorites">
+		<form>
+			<fieldset>
+				<legend>♥ favorites</legend>
+				<ul>
+					<li>eggs</li>
+					<li><span>☜ coffee</span></li>
+					<li>oj</li>
+					<li>bread <span>☜ ✘</span></li>
+					<li>creamer</li>
+				</ul>
+			</fieldset>
+		</form>
+	</div>
+
+</body>
+</html>
