@@ -12,9 +12,13 @@ $(document).ready(function() {
 		var new_item = $("input").val();
 
 		if (new_item.length > 1) {
-			$("#lists ul").prepend('<li> ' + new_item + ' <a href = "#" class = "check-item"> ✓ </a> <a href = "#" class = "x-item"> ✘ </a> </li>');
-			//$("#lists ul").prepend('<li> ' + new_item + ' </li>');
-			//$("#lists ul").prepend('<li> ' + new_item + ' <input type="button" class="check-item" value="✓" > </li>');
+			$("#lists ul").prepend('<li> ' + new_item + ' <span class = "x-item"> ✘ </span> </li>');
+
+			$("#lists li").click(function(event) {
+				//event.preventDefault();
+				$(event.target).toggleClass('strike');
+			});
+
 			$("input").val("");
 		}
 	});
@@ -32,10 +36,6 @@ $(document).ready(function() {
 			}
 	});
 
-	$(".check-item").click(function(e) {
-		//alert(e.target);
-		alert(e);
-	});
 
 	/*
 

@@ -2,7 +2,7 @@ body {
 	font-family: Arial;
 	font-size: 2.5em;
 	color: gray;
-	background-image: url("linen.jpg");
+	background-image: url("Linen.jpg");
 }
 
 #top-bar{
@@ -74,4 +74,15 @@ span {
 a, a:visited,a:active{
 	text-decoration: none;
 	color: #efc998;
+}
+
+body {
+	font-family: Arial;
+	font-size: 2.5em;
+	color: gray;
+	background-image: url("linen.jpg");
+}
+
+.strike {
+	text-decoration: line-through;
 }
