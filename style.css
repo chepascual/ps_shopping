@@ -70,3 +70,8 @@ fieldset {
 span {
 	color: #64768B;
 }
+
+a, a:visited,a:active{
+	text-decoration: none;
+	color: #efc998;
+}

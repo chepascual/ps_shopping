@@ -8,24 +8,41 @@ $(document).ready(function() {
 	//This adds the value to the list section when + pencil is clicked. Then clears the input box.
 
 	$(".add-item").click(function() {
+
 		var new_item = $("input").val();
-		//$("#lists li").first().css("color", "red");
-		$("#lists ul").prepend('<li> ' + new_item + ' </li>');
-		$("input").val("");
+
+		if (new_item.length > 1) {
+			$("#lists ul").prepend('<li> ' + new_item + ' <a href = "#" class = "check-item"> ✓ </a> <a href = "#" class = "x-item"> ✘ </a> </li>');
+			//$("#lists ul").prepend('<li> ' + new_item + ' </li>');
+			//$("#lists ul").prepend('<li> ' + new_item + ' <input type="button" class="check-item" value="✓" > </li>');
+			$("input").val("");
+		}
 	});
 
-
+//
 	//This adds the value to the list section when + heart is clicked. Then clears the input box.
 
 	$(".add-fave").click(function() {
-		var new_item = $("input").val();
-		$("#favorites ul").prepend('<li> ' + new_item + ' </li>');
-		$("input").val("");
+
+			var new_item = $("input").val();
+
+			if (new_item.length > 1) {
+				$("#favorites ul").prepend('<li> ' + new_item + ' </li>');
+				$("input").val("");
+			}
 	});
 
-	$("#lists").on("click", "li", function() {
+	$(".check-item").click(function(e) {
+		//alert(e.target);
+		alert(e);
+	});
+
+	/*
+
+	$("#lists li").on("mouseenter", function() {
 		//alert($(this).text());
 		if ($(".fly-button").length) {
+
 			alert("yes");
 		}
 		else {
@@ -37,10 +54,12 @@ $(document).ready(function() {
 			.button();
 			
 		}
+		.on("mouseleave", function() {
+			$("#lists").remove(".fly-button");
+		})
+
 
 	});
-
-
-
+*/
 
 });
