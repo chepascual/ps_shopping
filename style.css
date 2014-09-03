@@ -6,9 +6,9 @@ body {
 }
 
 #top-bar{
-	width: 100%;
+	width: 395px;
 	height: 100px;
-	border: 1px solid orange;
+	border: 2px solid #efc998;
 	color: #D5BE93;
 	padding-top: 30px;
 	text-align: center;
@@ -16,17 +16,13 @@ body {
 	background-image: url("milk.gif");
 	background-repeat: no-repeat;
 	background-position: top center;
+	margin: auto;
 }
 
 
 #lists {
-	width: 49%;
-	float: left;
-}
-
-#favorites {
-	width: 49%;
-	float: right;
+	width: 400px;
+	margin: auto;
 }
 
 
@@ -63,19 +59,12 @@ input {
 }
 
 fieldset {
-	border: 3px dotted #708EA4;
+	border: 6px dotted #708EA4;
 	text-align: center;
 }
 
-span {
-	color: #64768B;
-}
-
-a, a:visited,a:active{
-	text-decoration: none;
-	color: #efc998;
-}
 
 .strike {
 	text-decoration: line-through;
+	color: gray;
 }
