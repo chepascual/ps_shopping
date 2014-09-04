@@ -17,6 +17,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: top center;
 	margin: auto;
+	margin-top: 50px;
 }
 
 
@@ -31,7 +32,7 @@ li {
 	border-radius: 2px;
 	list-style: none;
 	color: orange;
-	border: 1px dotted #486D88;
+	//border: 1px dotted #486D88;
 	text-align: center;
 }
 
@@ -49,6 +50,7 @@ button {
 	width: 40px;
 }
 
+
 input {
 	background-color: #efc998;
 	//color: #fcb75d;   
@@ -61,10 +63,15 @@ input {
 fieldset {
 	border: 6px dotted #708EA4;
 	text-align: center;
+	padding-left: 1px;
 }
 
 
 .strike {
 	text-decoration: line-through;
 	color: gray;
+}
+
+#trash {
+	padding-left: 30px;
 }
